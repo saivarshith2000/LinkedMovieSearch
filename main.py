@@ -7,22 +7,6 @@ app = Flask(__name__)
 filters = ['Movie', 'Actor', 'Director']
 current_filter = filters[0]
 
-movie = {
-    'label': 'inception',
-    'genre': 'heist', 
-    'year': '2010',
-    'director': 'Christopher Nolan',
-    'cast': ['Leonardo DiCaprio', 'Ken Watanabe', 'Josehph Gordon-Levitt', 'Marion Cotillard', 'Ellen Pagel', 'Tom Hardy',\
-                'Cillian Murphy', 'Tom Berenger'],
-    'music': 'Hans Zimmer',
-    'studio': 'Warner Brothers',
-    'producer': 'Emma Thomas',
-    'runtime': '148 minutes',
-    'awards': ['Academy Award for blah', 'Academy Award for blah', 'Academy Award for blah',\
-    'Academy Award for blah', 'Academy Award for blah', 'Academy Award for blah', 'Academy Award for blah'],
-    'boxoffice' : '825,532,764 $',
-}
-
 @app.route('/', methods=['GET','POST'])
 def index():
     global current_filter

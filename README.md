@@ -1,6 +1,12 @@
 ## Linked Movie Search
 #### Linked Data Search Engine for Movies using Wikidata and Sparql  
-  
+
+### TEAM
+1. [H.O Sai Varshith](http://cse.iitkgp.ac.in/~honsv/) (17CS30015)
+2. [Harsh Pritam Sanapala](https://cse.iitkgp.ac.in/~harshps/) (17CS30016)
+3. [Madine Manas](https://cse.iitkgp.ac.in/~madinem/) (17CS10025)
+4. [Imandi Deepak](http://cse.iitkgp.ac.in/~imandid/) (17CS30017)
+
 ## Introduction
 Movie Search allows the user to search for movies, casts and directors. Simply select the filter
 you want to use and enter the search term. The app uses [SPARQL](https://www.w3.org/TR/rdf-sparql-query/) via the SPARQLWrapper library to query the [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) Knowledge base and displays the search results in a nice manner.The back-end is implemented in [Python3](https://www.python.org/download/releases/3.0/) using the [Flask](https://www.palletsprojects.com/p/flask/) framework while the front-end is implemented using [BulmaCSS](https://bulma.io/) library. Images for cast and directors are provided by Wikidata but unfortunately posters for movie are not avaiable in Wikidata. So,movie posters are obtained from [The Movie Database](https://www.themoviedb.org/) using their Free API. 
@@ -30,4 +36,4 @@ The app was originally supposed to be a **Search-Cum-Recommendation** system. Bu
 ## Possible Solutions for a Recommendation System
 1. **Static File Caching System:** This is a pretty common form of caching used by most of the online services. Its as follows, fetch results from the API, save them in a file based or SQL based database(File based is preferred for portable apps), on the next query check if this data is useful. This eliminates the need to send multiple queries to some extent. But, we need to have a very large cache of data to do this. This method would really impressive results if the app was implemented as a single server and multiple user model.
 
-2. **LIMIT SPARQL:** Use the `LIMIT` SPARQL construct to limit the number of triples returned. Although, the data returned is _correct_ it is not _enough_. We cannot run any meaningful recommendation algorithm on _limited_ data.
+2. **LIMIT SPARQL:** Use the `LIMIT` SPARQL construct to limit the number of triples returned. Although, the data returned is _ correct_ it is not _enough_. We cannot run any meaningful recommendation algorithm on _limited_ data.
