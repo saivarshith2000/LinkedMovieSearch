@@ -52,3 +52,4 @@ if __name__ == '__main__':
     app.config['TEMPLATES_AUTO_RELOAD'] = True
     app.config['DEBUG'] = True
     app.run()
+#coca-cola pepsi, maa varshith babai sexy
