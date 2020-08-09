@@ -12,7 +12,7 @@ Movie Search allows the user to search for movies, casts and directors. Simply s
 you want to use and enter the search term. The app uses [SPARQL](https://www.w3.org/TR/rdf-sparql-query/) via the SPARQLWrapper library to query the [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) Knowledge base and displays the search results in a nice manner.The back-end is implemented in [Python3](https://www.python.org/download/releases/3.0/) using the [Flask](https://www.palletsprojects.com/p/flask/) framework while the front-end is implemented using [BulmaCSS](https://bulma.io/) library. Images for cast and directors are provided by Wikidata but unfortunately posters for movie are not avaiable in Wikidata. So,movie posters are obtained from [The Movie Database](https://www.themoviedb.org/) using their Free API. 
 
 ## Running the App
-Since the app is written in Python, running it is pretty simple. All you need is a relatively new version of Python3 and its package
+Since the app is written in Python, running it is pretty simple. All you need is the latest version of Python3 and its package
 manager [pip](https://pip.pypa.io/en/stable/). To run the app, run the following commands  
 ```bash
 git clone https://github.com/saivarshith2000/LinkedMovieSearch  # Clone this repository
